@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace WpfGames.Models.Pacman
 {
-    internal enum CellType
+    internal class MapItem
     {
-        Empty,
-        Wall,
-        Coin
     }
 }
