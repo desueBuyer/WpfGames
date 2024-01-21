@@ -40,10 +40,10 @@ namespace WpfGames.Helpers
 
         private void LoadFullMap()
         {
-            for (int x = 0; x < _rawMap.GetLength(1); x++)
+            for (int x = 0; x < _rawMap[0].Length; x++)
             {
                 var mapRow = new List<CellType>();
-                for (int y = 0; y < _rawMap.GetLength(0); y++)
+                for (int y = 0; y < _rawMap.Length; y++)
                 {
                     var type = CellType.Empty;
                     switch (_rawMap[y][x])
