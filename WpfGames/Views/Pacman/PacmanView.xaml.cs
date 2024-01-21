@@ -10,30 +10,22 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using WpfGames.Views.Pacman;
+using WpfGames.ViewModels.Pacman;
 
-namespace WpfGames
+namespace WpfGames.Views.Pacman
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Логика взаимодействия для PacmanView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class PacmanView : Window
     {
+        private PacmanViewModel model = new PacmanViewModel();
 
-        PacmanView pV;
-
-        public MainWindow()
+        public PacmanView()
         {
             InitializeComponent();
-        }
-
-        private void OpenPacmanGame(object sender, RoutedEventArgs e)
-        {
-            this.Hide();
-            pV = new PacmanView();
-            pV.Show();
+            DataContext = model;
         }
     }
 }

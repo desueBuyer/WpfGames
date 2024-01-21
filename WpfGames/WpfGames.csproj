@@ -8,8 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="ViewModels\Pacman\" />
-    <Folder Include="Views\Pacman\" />
+    <PackageReference Include="Prism.Wpf" Version="8.1.97" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Source\" />
   </ItemGroup>
 
 </Project>
